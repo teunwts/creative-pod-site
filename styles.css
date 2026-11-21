@@ -824,3 +824,11 @@ main { z-index: 1; }
 .lg-word.chary { font-family: var(--serif); font-weight: 400; font-style: normal; font-size: 28px; letter-spacing: -.01em; }
 @media (max-width: 900px) { .stats-band .bar dt { font-size: clamp(12.5px, 3.6vw, 26px); letter-spacing: -.02em; } }
 .stats-band .count { text-align: left; }
+
+/* ---- v23: plnktn als twee kolommen, gelijk met de Parvum-case ---- */
+.case-split { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: center; gap: 48px; }
+.case-split .iphones.three { justify-content: flex-end; flex-wrap: nowrap; gap: 20px; }
+.case-split .iphones.three .iph { width: 190px; }
+@media (max-width: 1080px) { .case-split .iphones.three .iph { width: 160px; } }
+@media (max-width: 900px) { .case-split { grid-template-columns: 1fr; } .case-split .iphones.three { justify-content: center; } }
+@media (max-width: 640px) { .case-split .iphones.three { gap: 10px; } .case-split .iphones.three .iph { width: calc((100% - 20px) / 3); } }
