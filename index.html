@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teun's Creative Pod</title>
-  <meta name="description" content="The Creative Pod: een doorlopende creatieve groeimotor voor D2C-merken. Strategie, creatie en merkbouw in één pod, door Teun Wientjens.">
+  <meta name="description" content="High-production social ads for DTC brands. Creative strategy, production and edit by Teun Wientjens: from a bold idea to a ready-to-post video that sells.">
   <meta name="theme-color" content="#0b1127">
   <link rel="canonical" href="https://creative-pod.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://creative-pod.com/">
   <meta property="og:title" content="Teun's Creative Pod">
-  <meta property="og:description" content="Een doorlopende creatieve groeimotor voor D2C-merken. Strategie, creatie en merkbouw in één pod, door Teun Wientjens.">
+  <meta property="og:description" content="High-production social ads for DTC brands. From a bold idea to a ready-to-post video that sells.">
   <meta property="og:image" content="https://creative-pod.com/assets/teun.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400;1,8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="fonts.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=22">
 </head>
 <body>
   <div class="glow" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -25,209 +23,370 @@
     <div class="wrap top-in">
       <a href="#top" class="brand">The <em>Creative</em> Pod</a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
-      <nav id="nav" class="nav" aria-label="Hoofdmenu">
-        <a href="#teun">Over Teun</a>
-        <a href="#pilaren">Diensten</a>
-        <a href="#loop">Proces</a>
-        <a href="#werk">Werk</a>
-        <a href="#resultaten">Resultaten</a>
-        <a href="#samenwerken">Samenwerken</a>
-        <a href="#contact" class="btn btn-sm">Plan een call</a>
+      <nav id="nav" class="nav" aria-label="Main menu">
+        <a href="#work" data-t="t1">Work</a>
+        <a href="#different" data-t="t2">Why Teun</a>
+        <a href="#offers" data-t="t3">Offers</a>
+        <a href="#process" data-t="t4">Process</a>
+        <a href="#faq" data-t="t5">FAQ</a>
+        <button type="button" class="lang" id="lang" role="switch" aria-checked="false" aria-label="Language: English or Dutch"><span class="lang-en">EN</span><span class="lang-nl">NL</span></button>
+        <a href="#contact" class="btn btn-sm" data-t="t6">Book a call</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- 1 · Hero -->
-    <section class="hero" id="top">
-      <div class="wrap center">
-        <p class="hero-brand reveal"><span class="ball" aria-hidden="true"></span><b>Teun's <em>Creative</em> Pod</b></p>
-        <h1 class="reveal"><em>Ads</em> verwelken.<br>Statics <em>vergaan.</em></h1>
-        <p class="hero-sub reveal">Maar <em>creative fatigue</em> blijft (helaas) voor altijd bestaan.</p>
-        <hr class="rule reveal">
-        <p class="hero-small reveal">Werk daarom met The <em>Creative</em> Pod: een doorlopende creatieve groeimotor voor D2C-merken: strategie, creatie en merkbouw in één pod.</p>
-        <a href="#contact" class="btn reveal">Plan een kennismaking</a>
+    <!-- Hero: tekstreeks die bij het scrollen in vier stappen verschijnt -->
+    <section class="hero3" id="top">
+      <div class="hero3-sticky">
+        <p class="hero-brand hero3-brand"><span class="ball" aria-hidden="true"></span><b>Teun's <em>Creative</em> Pod</b></p>
+        <div class="hero3-lines">
+          <h1 class="hl hl1" data-t="h1a"><em>Ads</em> die.</h1>
+          <p class="hl hl2" data-t="h1b">Statics <em>fade.</em></p>
+          <p class="hl hl3" data-t="h1c">But <em>creative fatigue</em> is forever.</p>
+          <div class="hl hl4"><p class="tagline" data-t="h1d">That's why you work with The Creative Pod.</p><div class="hero3-cta"><a href="#contact" class="btn" data-t="t11">Book an intro call</a><a href="#work" class="btn-ghost" data-t="t12">See the work</a></div></div>
+        </div>
+        <p class="hero3-hint" aria-hidden="true">Scroll</p>
       </div>
     </section>
 
-    <!-- 2 · Dit is Teun -->
+    <!-- Cijfers -->
+    <section class="stats-band">
+      <div class="wrap">
+        <dl class="bar">
+          <div><dt><span class="count" data-to="100000000">100,000,000</span>+</dt><dd data-t="t14">views</dd></div>
+          <div><dt><span class="count" data-to="3000">3,000</span>+</dt><dd data-t="t13">ads launched</dd></div>
+          <div><dt>€<span class="count" data-to="5000000">5,000,000</span>+</dt><dd data-t="t15">revenue generated</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Logos -->
+    <section class="logos" aria-label="Brands Teun created for">
+      <p class="logos-t" data-t="t16">For brands &amp; agencies like</p>
+      <div class="marquee"><div class="marquee-track">
+        <span class="lg-item"><img src="assets/poopy-logo.png" alt="Poopy" width="99" height="44" class="lg-poopy"></span>
+        <span class="lg-item"><img src="assets/logos/moobalm.svg" alt="MooBalm" width="135" height="30"></span>
+        <span class="lg-item"><img src="assets/logos/parvum.svg" alt="Parvum" width="119" height="30"></span>
+        <span class="lg-item"><img src="assets/logos/modulari.svg" alt="Modulari" width="184" height="18"></span>
+        <span class="lg-item"><img src="assets/logos/plnktn.svg" alt="plnktn" width="92" height="30"></span>
+        <span class="lg-item lg-word chary">Chary.</span>
+        <span class="lg-item lg-word">YACE</span>
+        <span class="lg-item"><img src="assets/logos/mothersearth.svg" alt="Mother's Earth" width="93" height="30"></span>
+      </div></div>
+    </section>
+
+    <!-- Work -->
+    <section class="sec" id="work">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x1">Portfolio</p>
+        <h2 class="reveal" data-t="t17">Selected <em>work.</em></h2>
+        <p class="lead reveal" data-t="t18">Real productions, real talent, real results. Tap a video to play it with sound.</p>
+
+        <div class="case case-feature reveal">
+          <div class="case-text">
+            <p class="case-k" data-t="t19">Parvum &nbsp;·&nbsp; Mobility, DTC</p>
+            <h3 class="h-md" data-t="t20">One production day, <em>a full batch.</em></h3>
+            <p class="body" data-t="x12">One planned production day became a full batch: 6 scripts and 19 ready-to-post videos, every concept with three hook variations or product variants. On top of that, a library of B-roll that now runs on Parvum's website and product pages, and keeps feeding new statics and cut-downs.</p>
+            <ul class="facts"><li data-t="x13"><b>1</b> production day</li><li data-t="x14"><b>6</b> scripts</li><li data-t="x15"><b>19</b> videos</li><li data-t="x16"><b>B-roll</b> for site, PDP and statics</li></ul>
+            <button type="button" class="btn" id="open-batch" data-t="x17">See the batch</button>
+          </div>
+          <div class="stack" aria-label="Parvum videos">
+            <figure class="iph back l"><div class="iph-body"><video src="assets/video/parvum-5.mp4" muted loop playsinline preload="metadata" aria-label="Parvum: the powerhouse"></video></div></figure>
+            <figure class="iph back r"><div class="iph-body"><video src="assets/video/parvum-6.mp4" muted loop playsinline preload="metadata" aria-label="Parvum unboxing"></video></div></figure>
+            <figure class="iph front"><div class="iph-body"><video src="assets/video/parvum-1.mp4" muted loop playsinline preload="metadata" aria-label="Parvum founder story"></video></div></figure>
+          </div>
+        </div>
+
+        <dialog class="batch" id="batch" aria-label="Parvum batch 1">
+          <div class="batch-in">
+            <div class="batch-head">
+              <div><p class="case-k">Parvum &nbsp;·&nbsp; Batch 1</p><h3 class="h-md">6 scripts, <em>19 videos.</em></h3><p class="body">In this batch we covered the full funnel: founder content for top of funnel, talent-led product content for middle of funnel, and videos that send people straight to the product page and the Fit Finder. On top of the six concepts we shot a big B-roll library, so new recuts to test new ad angles are quick and much cheaper.</p>
+                <ul class="funnel"><li><b>TOFU</b> Stop the scroll, build trust</li><li><b>MOFU</b> Answer objections, show the product</li><li><b>BOFU</b> Drive to PDP and Fit Finder</li></ul>
+                <p class="body small">Every file follows one naming convention: brand, batch, script, hook. So the media buyer always knows what is being tested.</p></div>
+              <form method="dialog"><button class="lb-close batch-close" aria-label="Close">✕</button></form>
+            </div>
+            <div id="batch-list"></div>
+          </div>
+        </dialog>
+
+        <div class="case reveal">
+          <div class="case-text">
+            <p class="case-k" data-t="t26">Poopy &nbsp;·&nbsp; Pet care, DTC</p>
+            <h3 class="h-md" data-t="t27">From €0 to <em>€3.5M</em> in 18 months.</h3>
+            <p class="body" data-t="t28">Creative strategy, production and iteration for a new DTC brand going from the Netherlands to all of Europe. Street interviews, vet collabs, sketches and demos, tested and iterated in every European language.</p>
+            <dl class="stats">
+              <div><dt>€<span class="count2" data-to="3.5" data-dec="1">3.5</span>M</dt><dd data-t="t29">yearly revenue</dd></div>
+              <div><dt><span class="count2" data-to="65" data-dec="0">65</span>M+</dt><dd data-t="t30">views</dd></div>
+              <div><dt><span class="count2" data-to="2.5" data-dec="1">2.5</span>K+</dt><dd data-t="t31">ads launched</dd></div>
+            </dl>
+          </div>
+          <div class="iphones five">
+            <figure class="iph"><div class="iph-body"><video src="assets/video/poopy-1.mp4" muted loop playsinline preload="metadata" aria-label="Poopy: Product ad (EN)"></video></div><figcaption data-t="pv1">Product ad (EN)</figcaption></figure>
+            <figure class="iph"><div class="iph-body"><video src="assets/video/poopy-2.mp4" muted loop playsinline preload="metadata" aria-label="Poopy: Voice-over ad"></video></div><figcaption data-t="pv2">Voice-over ad</figcaption></figure>
+            <figure class="iph"><div class="iph-body"><video src="assets/video/poopy-3.mp4" muted loop playsinline preload="metadata" aria-label="Poopy: Hook test (NL)"></video></div><figcaption data-t="pv3">Hook test (NL)</figcaption></figure>
+            <figure class="iph"><div class="iph-body"><video src="assets/video/poopy-4.mp4" muted loop playsinline preload="metadata" aria-label="Poopy: Product launch"></video></div><figcaption data-t="pv4">Product launch</figcaption></figure>
+            <figure class="iph"><div class="iph-body"><video src="assets/video/poopy-5.mp4" muted loop playsinline preload="metadata" aria-label="Poopy: Mini VSL"></video></div><figcaption data-t="pv5">Mini VSL</figcaption></figure>
+          </div>
+          </div>
+        </div>
+
+        <div class="case reveal">
+          <div class="case-text">
+            <p class="case-k" data-t="t38">plnktn &nbsp;·&nbsp; Algae supplements</p>
+            <h3 class="h-md" data-t="t39">Formats <em>that sell.</em></h3>
+            <p class="body" data-t="t40">Creative strategy and scripts for social ads, through an agency. Office humor, a testimonial and the product on the shelf: three angles to test.</p>
+          </div>
+          <div class="iphones three">
+            <figure class="iph"><div class="iph-body"><img src="assets/work/plnktn-meeting.jpg" alt="Office sketch for plnktn" loading="lazy"></div><figcaption data-t="t41">Office sketch</figcaption></figure>
+            <figure class="iph"><div class="iph-body"><img src="assets/work/plnktn-testimonial.jpg" alt="Testimonial for plnktn" loading="lazy"></div><figcaption data-t="t42">Testimonial</figcaption></figure>
+            <figure class="iph"><div class="iph-body"><img src="assets/work/plnktn-shelf.jpg" alt="plnktn on the shelf" loading="lazy"></div><figcaption data-t="t43">On the shelf</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="sec panel" id="results">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x2">Results</p>
+        <h2 class="reveal" data-t="t54">Client <em>results.</em></h2>
+        <p class="lead reveal" data-t="t55">No fluff. This is what it looks like in Ads Manager.</p>
+        <button type="button" class="shot reveal" data-zoom aria-label="View screenshot full size">
+          <img src="assets/results/ads-manager.jpg" alt="Meta Ads Manager: €633,072 spent, average ROAS 4.08, €2,584,015 conversion value, 65 million impressions" width="1330" height="774" loading="lazy">
+        </button>
+        <p class="closer reveal" data-t="t56"><em>Real numbers from client campaigns.</em></p>
+      </div>
+    </section>
+
+    <dialog class="lightbox" aria-label="Screenshot full size">
+      <form method="dialog"><button class="lb-close" aria-label="Close">✕</button></form>
+      <img alt="">
+    </dialog>
+
+    <!-- Why different -->
+    <section class="sec" id="different">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x3">Why Teun</p>
+        <h2 class="reveal" data-t="t63">Quality first. <em>Volume when you need it.</em></h2>
+        <p class="lead reveal" data-t="t64">Hero content that looks like a brand, plus an AI system that makes volume affordable. Six things you get with Teun:</p>
+        <div class="grid g3 vals">
+          <article class="card val reveal"><span class="val-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0"/></svg></span><h3 data-t="v1t">One owner</h3><p data-t="v1p">From idea to final cut. Nothing gets lost in hand-offs.</p></article>
+          <article class="card val reveal"><span class="val-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8h4l2-3h6l2 3h4v11H3zM12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg></span><h3 data-t="v2t">High production</h3><p data-t="v2p">Real talent, humor, story and proper light.</p></article>
+          <article class="card val reveal"><span class="val-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v6M12 9l-7 6M12 9l7 6M5 15v4M19 15v4M12 9v10"/></svg></span><h3 data-t="v3t">Content that travels</h3><p data-t="v3p">One production feeds ads, product pages, banners and statics.</p></article>
+          <article class="card val reveal"><span class="val-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span><h3 data-t="v4t">Story first</h3><p data-t="v4p">Every video starts from a real customer and a clear angle.</p></article>
+          <article class="card val reveal"><span class="val-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg></span><h3 data-t="v5t">Built to test</h3><p data-t="v5p">Hooks and versions per market, ready to test from day one.</p></article>
+          <article class="card val hi reveal"><span class="val-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></span><h3 data-t="v6t">Volume with AI</h3><p data-t="v6p">An AI system makes volume affordable, next to the hero content.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explainer: B-roll hergebruik -->
+    <section class="sec panel" id="repurpose">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x4">B-roll</p>
+        <h2 class="reveal" data-t="x18">One production, <em>months of content.</em></h2>
+        <p class="lead reveal" data-t="x19">When we plan for it, a production comes with a dedicated B-roll shotlist. That footage keeps working long after the ads go live: on your product pages, your website and in every new test.</p>
+        <div class="rp rp-tree reveal">
+          <div class="rp-center"><span class="rp-dot" aria-hidden="true"></span><p class="rp-big" data-t="x20">1 production day</p><p data-t="x21">A-roll for the ads, plus a B-roll shotlist built for reuse</p></div>
+          <div class="rp-row">
+            <figure class="gif g-ad"><div class="mk mk-ad r916" aria-hidden="true"><span class="mk-top">Sponsored</span><span class="mk-hook"><b>Hook 1</b><b>Hook 2</b><b>Hook 3</b></span><span class="mk-cta">Shop now</span></div><figcaption data-t="x22">Ads + hook variations</figcaption></figure>
+            <figure class="gif g-cut"><div class="mk mk-cut r916" aria-hidden="true"><span class="mk-frames"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="mk-time"><i></i></span><span class="mk-len">0:15</span></div><figcaption data-t="x23">New cut-downs to test</figcaption></figure>
+            <figure class="gif g-pdp"><div class="mk mk-pdp r11" aria-hidden="true"><span class="mk-img"><i></i></span><span class="mk-line w70"></span><span class="mk-line w40"></span><span class="mk-btn">Add to cart</span><span class="mk-badge">GIF</span></div><figcaption data-t="x24">GIFs for product pages</figcaption></figure>
+            <figure class="gif g-static"><div class="mk mk-static r45" aria-hidden="true"><span class="mk-line w80 big"></span><span class="mk-line w55 big"></span><span class="mk-prod"></span><span class="mk-off">-25%</span></div><figcaption data-t="x25">Statics and carousels</figcaption></figure>
+            <figure class="gif g-banner"><div class="mk mk-banner r169" aria-hidden="true"><span class="mk-nav"><i></i><i></i><i></i><i></i></span><span class="mk-hero"><span class="mk-line w60 big"></span><span class="mk-line w40"></span><span class="mk-btn sm">Shop</span></span><span class="mk-pan"></span></div><figcaption data-t="x26">Website banners</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hookvariaties -->
+    <section class="sec" id="hooks">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x5">Hooks</p>
+        <h2 class="reveal" data-t="x27">One body, <em>three hooks.</em></h2>
+        <p class="lead reveal" data-t="x28">The first seconds decide if someone keeps watching. That's why every concept ships with hook variations on the same body, so you test the opening, not the whole ad.</p>
+        <ol class="flow hooks reveal">
+          <li><span class="ver">H1</span><div class="iph"><div class="iph-body"><img src="assets/work/hook-1.jpg" alt="Hook 1" loading="lazy"></div></div><p class="chg" data-t="x29"><b>Hook 1</b>Talking head at the kitchen table</p></li>
+          <li><span class="ver">H2</span><div class="iph"><div class="iph-body"><img src="assets/work/hook-2.jpg" alt="Hook 2" loading="lazy"></div></div><p class="chg" data-t="x30"><b>Hook 2</b>Open on a location</p></li>
+          <li><span class="ver">H3</span><div class="iph"><div class="iph-body"><img src="assets/work/hook-3.jpg" alt="Hook 3" loading="lazy"></div></div><p class="chg" data-t="x31"><b>Hook 3</b>Open on a surprising fact</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Iteration -->
+    <section class="sec panel" id="iteration">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x6">Method</p>
+        <h2 class="reveal" data-t="t44">How we iterate <em>on winners.</em></h2>
+        <p class="lead reveal" data-t="t45">First we test the format and the message. When it works, we vary the hook, voice-over, message and visuals. An example from the Poopy campaigns.</p>
+        <ol class="flow reveal">
+          <li><span class="ver">V1</span><div class="iph"><div class="iph-body"><img src="assets/work/poopy-demo.jpg" alt="First creative" loading="lazy"></div></div><p class="chg" data-t="x32"><b>First creative</b>Format based on a competitor winner</p></li>
+          <li><span class="ver">V2</span><div class="iph"><div class="iph-body"><img src="assets/work/poopy-vo-iteration.jpg" alt="Voice-over iteration" loading="lazy"></div></div><p class="chg" data-t="x33"><b>New voice-over</b>Same visuals, sharper message</p></li>
+          <li><span class="ver">V3</span><div class="iph"><div class="iph-body"><img src="assets/work/poopy-hook-vo.jpg" alt="Hook and voice-over iteration" loading="lazy"></div></div><p class="chg" data-t="x34"><b>New hook + VO</b>Stronger first three seconds</p></li>
+          <li class="win"><span class="ver">V4</span><div class="iph"><div class="iph-body"><img src="assets/work/poopy-visual-message.jpg" alt="Visual and message iteration" loading="lazy"></div></div><p class="chg" data-t="x35"><b>New visual + message</b>The winner to scale</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="sec" id="offers">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x7">Offers</p>
+        <h2 class="reveal" data-t="t77">Three ways to <em>work together.</em></h2>
+        <div class="offers">
+          <article class="card offer hi reveal">
+            <span class="num">01</span>
+            <p class="offer-for" data-t="x36">For brands that want it all done for them</p>
+            <p class="offer-k" data-t="t78">Done for you</p>
+            <h3 data-t="t79">From blink to <em>ka-ching.</em></h3>
+            <p data-t="t80">A to Z content production. From a bold idea to a banger video with captions and hook variations, ready to post and making sales.</p>
+            <ul class="plus"><li data-t="t81">Creative strategy and scripts</li><li data-t="t82">Production planning, talent and crew</li><li data-t="t83">Edit, captions and hook variations</li><li data-t="t84">B-roll library for GIFs, banners and statics</li></ul>
+            <p class="offer-f" data-t="t85">One-off production or monthly</p>
+            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ofHE8I3sKXD-uI1uMaeH-Koqclt5haYWABXHGtLXQmIU-AO3LOSjHk7LJwhe9zlsYVPKGJxn9" target="_blank" rel="noopener" class="offer-btn" data-t="obt85">Book a call about this</a>
+          </article>
+          <article class="card offer reveal">
+            <span class="num">02</span>
+            <p class="offer-for" data-t="x37">For brands that need a creative strategist, not a full crew</p>
+            <p class="offer-k" data-t="t86">Creative strategy only</p>
+            <h3 data-t="t87">The thinking, <em>without the crew.</em></h3>
+            <p data-t="t88">Strategy, angles and scripts from Teun himself, for brands with their own production team or creators.</p>
+            <ul class="plus"><li data-t="t89">Creative audit and testing plan</li><li data-t="t90">Personas and angles</li><li data-t="t91">Scripts with hook variations</li><li data-t="t92">Feedback on your edits</li></ul>
+            <p class="offer-f" data-t="t93">Minimum 3 month commitment</p>
+            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ofHE8I3sKXD-uI1uMaeH-Koqclt5haYWABXHGtLXQmIU-AO3LOSjHk7LJwhe9zlsYVPKGJxn9" target="_blank" rel="noopener" class="offer-btn" data-t="obt93">Book a call about this</a>
+          </article>
+          <article class="card offer reveal">
+            <span class="num">03</span>
+            <p class="offer-for" data-t="x38">For brands that want to build in-house</p>
+            <p class="offer-k" data-t="t94">Advisory</p>
+            <h3 data-t="t95">A sparring partner <em>on call.</em></h3>
+            <p data-t="t96">Brainstorms, sparring, consulting and mentoring for founders and in-house teams who make their own content.</p>
+            <ul class="plus"><li data-t="t97">Brainstorm and concept sessions</li><li data-t="t98">Review of your ads and creative</li><li data-t="t99">Coaching your team or creator</li><li data-t="t100">DTC and offer advice</li></ul>
+            <p class="offer-f" data-t="t101">Per session or monthly</p>
+            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ofHE8I3sKXD-uI1uMaeH-Koqclt5haYWABXHGtLXQmIU-AO3LOSjHk7LJwhe9zlsYVPKGJxn9" target="_blank" rel="noopener" class="offer-btn" data-t="obt101">Book a call about this</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="sec panel" id="process">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x8">Process</p>
+        <h2 class="reveal" data-t="t102">From intro to iteration: <em>one loop.</em></h2>
+        <div class="leadin reveal">
+          <p class="leadin-t" data-t="x39">Getting started</p>
+          <ol class="lead-steps">
+            <li><span class="num">01</span><h3 data-t="x40">Intro &amp; creative audit</h3><p data-t="x41">We meet and Teun reviews your ad library, website and current creatives.</p></li>
+            <li><span class="num">02</span><h3 data-t="x42">Deep audit &amp; onboarding</h3><p data-t="x43">Ad account access and an onboarding form: personas, testing and creative approach so far.</p></li>
+            <li><span class="num">03</span><h3 data-t="x44">Your plan &amp; agreement</h3><p data-t="x45">A 3 or 6 month plan, or a custom plan for a one-off production. New angles and research where needed. Then we sign.</p></li>
+            <li><span class="num">04</span><h3 data-t="x46">Research &amp; setup</h3><p data-t="x47">Your brand, data and tools in one shared AI workspace, plus strategy and DTC consults.</p></li>
+          </ol>
+        </div>
+        <div class="bridge reveal" aria-hidden="true"><span data-t="x57">Then the loop starts</span></div>
+        <div class="loop reveal">
+          <svg class="loop-ring" viewBox="0 0 400 400" aria-hidden="true">
+            <defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#79e866" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+            <path d="M 236 22 A 180 180 0 0 1 378 164" fill="none" stroke="#79e866" stroke-width="2"/>
+            <path d="M 378 236 A 180 180 0 0 1 236 378" fill="none" stroke="#79e866" stroke-width="2"/>
+            <path d="M 164 378 A 180 180 0 0 1 22 236" fill="none" stroke="#79e866" stroke-width="2"/>
+            <path d="M 22 164 A 180 180 0 0 1 164 22" fill="none" stroke="#79e866" stroke-width="2"/>
+            <path d="M-7 -8 L5 0 L-7 8" transform="translate(327 73) rotate(45)" fill="none" stroke="#79e866" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M-7 -8 L5 0 L-7 8" transform="translate(327 327) rotate(135)" fill="none" stroke="#79e866" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M-7 -8 L5 0 L-7 8" transform="translate(73 327) rotate(225)" fill="none" stroke="#79e866" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M-7 -8 L5 0 L-7 8" transform="translate(73 73) rotate(315)" fill="none" stroke="#79e866" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="loop-center" data-t="x56"><b>The loop</b><em>Every batch gets smarter than the last.</em></p>
+          <div class="node n1"><span class="num">05</span><h3 data-t="x48">Ad batches</h3><p data-t="x49">Video scripts, statics and AI-driven video ads from existing footage.</p></div>
+          <div class="node n2"><span class="num">06</span><h3 data-t="x50">Production &amp; edit</h3><p data-t="x51">Optional production day, planned and briefed by Teun, run by a trusted crew.</p></div>
+          <div class="node n3"><span class="num">07</span><h3 data-t="x52">Launch &amp; test</h3><p data-t="x53">Your media buyer runs the hooks and versions per market.</p></div>
+          <div class="node n4"><span class="num">08</span><h3 data-t="x54">Learn</h3><p data-t="x55">Together we review the results, keep track of the learnings and improve the next batch.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
     <section class="sec" id="teun">
       <div class="wrap about">
         <div class="reveal">
           <hr class="rule left">
-          <h2>Dit is <em>Teun.</em></h2>
-          <p class="role">Founder &amp; Creative Strategist</p>
-          <p class="body">Teun is een creative concept creator, strategist, video director, editor en marketeer, iemand die het liefst op het snijvlak van idee en resultaat werkt.</p>
-          <p class="body">Waarom hij dit doet? Omdat hij gelooft dat creatie het verschil maakt tussen merken die schreeuwen om aandacht en merken die 'm verdienen. Een goed idee, scherp uitgevoerd, verslaat elk mediabudget.</p>
-          <p class="body">Die overtuiging bracht hem van video's regisseren en edits draaien naar het aansturen van complete groeistrategieën voor D2C-merken. The Creative Pod is de volgende stap: een compact team dat denkt, maakt, bouwt en spart als verlengstuk van jouw merk.</p>
-          <p class="think">My best place to think? <em>Outside of the box.</em></p>
-          <p class="foot-note">Werkte met o.a. Poopy en Mother's Earth — sinds 2023.</p>
+          <p class="eyebrow" data-t="x9">About</p>
+        <h2 data-t="t57">This is <em>Teun.</em></h2>
+          <p class="role" data-t="t58">Founder &amp; Creative Strategist</p>
+          <p class="body" data-t="t59">Teun is a creative strategist, creative director and marketer. He works as an external creative partner for DTC brands, where the idea meets the numbers.</p>
+          <p class="body" data-t="t60">He started out making and editing videos himself. Today he runs creative for several brands at once: strategy, scripts, creative direction and the final edit. The Creative Pod is his remote studio: Teun on strategy and creative direction, with a trusted network of directors, videographers and editors for production.</p>
+          <p class="think" data-t="t61">My best place to think? <em>Outside of the box.</em></p>
+          <p class="foot-note" data-t="t62">Independent since 2023. Fully remote, working with brands across Europe.</p>
         </div>
         <img class="portrait reveal" src="assets/teun.jpg" alt="Teun Wientjens" width="886" height="840">
       </div>
     </section>
 
-    <!-- 3 · Poopy stats -->
-    <section class="sec" id="poopy">
-      <div class="wrap poopy">
-        <img class="poopy-logo reveal" src="assets/poopy-logo.png" alt="Poopy" width="234" height="104">
-        <div class="reveal">
-          <h2 class="h-md">Poopy — <em>Partnership Growth Stats</em></h2>
-          <p class="body">Twee jaar lang werkte Teun als CMO bij Poopy: hij zette de richting voor strategie, creatie, productie, retention marketing en branding, en bouwde het marketingteam van 0 naar 10+ mensen. Van €0 naar €3.5M jaaromzet, in 18 maanden. Van NL naar heel Europa.</p>
-          <dl class="stats">
-            <div><dt>+€3.5M</dt><dd>Revenue</dd></div>
-            <div><dt>+65M</dt><dd>Views</dd></div>
-            <div><dt>+2.500</dt><dd>Ads launched</dd></div>
-            <div><dt>+1.000</dt><dd>Customers on recurring model</dd></div>
-            <div><dt>+35K</dt><dd>Email subscribers</dd></div>
-            <div><dt>+6M</dt><dd>Reach</dd></div>
-          </dl>
-          <p class="foot-note"><em>Paid &amp; social creative partner sinds 2024.</em></p>
+    <!-- Who does what -->
+    <section class="sec panel" id="team">
+      <div class="wrap">
+        <p class="eyebrow" data-t="x10">Team</p>
+        <h2 class="reveal" data-t="t110">Who does <em class="b">what.</em></h2>
+        <p class="lead reveal" data-t="t111">Teun stays personally responsible for strategy and your contact. Production runs through a trusted network of directors, videographers and editors, briefed and guided by Teun.</p>
+        <div class="handoff reveal">
+          <article class="card who">
+            <div class="who-head"><img src="assets/teun.jpg" alt="Teun Wientjens" width="56" height="56"><div><h3>Teun</h3><p data-t="x58">Strategy and creative direction</p></div></div>
+            <ul class="ic-list">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-t="x63">Calls and intake</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3"/></svg><span data-t="x64">Creative strategy and concepts</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4zM14 6l3 3"/></svg><span data-t="x65">Scriptwriting</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4zM9 7V5h6v2M4 12h16"/></svg><span data-t="x66">Creative direction and production briefing</span></li>
+              <li class="ret"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-t="x67">Final check on every edit</span></li>
+            </ul>
+          </article>
+          <div class="pass">
+            <p class="pass-a"><span data-t="x61">Brief &amp; direction</span></p>
+            <p class="pass-b"><span data-t="x62">Edits back for final check</span></p>
+          </div>
+          <article class="card who">
+            <div class="who-head"><span class="crew" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v11H3zM12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg></span><div><h3 data-t="x60">Production network</h3><p data-t="x59">Directors, videographers, editors</p></div></div>
+            <ul class="ic-list">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12zM12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg><span data-t="x68">Pre-production and location scouting</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v11H3zM12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg><span data-t="x69">Production day (director, producer, videographer)</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8.5 7.5L20 19M8.5 16.5L20 5"/></svg><span data-t="x70">Editing, captions and versions</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><span data-t="x71">Processing your feedback</span></li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- 4 · Pillars -->
-    <section class="sec" id="pilaren">
-      <div class="wrap">
-        <h2 class="reveal"><em class="b">4 pilaren</em>, met paid als <em>motor.</em></h2>
-        <p class="lead reveal">Alles wat we doen, voedt hetzelfde systeem: paid brengt nieuwe oogballen binnen, en sterke creatie en branding zetten die aandacht om in een merk dat blijft verkopen.</p>
-        <div class="grid g4">
-          <article class="card hi pillar reveal"><img src="assets/pillars/denken.jpg" alt="" loading="lazy"><h3><em>Denken.</em></h3><p class="card-t">Creative Strategy</p><p>Angles, scripts en concepten gebouwd op wat converteert in paid.</p></article>
-          <article class="card pillar reveal"><img src="assets/pillars/maken.jpg" alt="" loading="lazy"><h3><em>Maken.</em></h3><p class="card-t">Production</p><p>Shoots, edits en static design publicatieklaar.</p></article>
-          <article class="card pillar reveal"><img src="assets/pillars/bouwen.jpg" alt="" loading="lazy"><h3><em>Bouwen.</em></h3><p class="card-t">Branding</p><p>Een merk dat blijft hangen, premium mag prijzen en klanten laat terugkomen.</p></article>
-          <article class="card pillar reveal"><img src="assets/pillars/sparren.jpg" alt="" loading="lazy"><h3><em>Sparren.</em></h3><p class="card-t">DTC Consulting</p><p>Launches, listicles, one-offs, offers, seasonal campaigns, en funnel-brede strategie.</p></article>
-        </div>
+    <!-- FAQ -->
+    <section class="sec" id="faq">
+      <div class="wrap faq">
+        <p class="eyebrow" data-t="x11">FAQ</p>
+        <h2 class="reveal" data-t="t123">Frequently asked <em>questions.</em></h2>
+        <details class="card reveal"><summary data-t="t124">Which brands do you work with?</summary><p data-t="t125">DTC and e-commerce brands that advertise on Meta and TikTok and want content with a higher bar. From a first batch to an ongoing monthly setup.</p></details>
+        <details class="card reveal"><summary data-t="t126">How is this different from an agency?</summary><p data-t="t127">You talk directly to the strategist who writes your scripts and leads the creative direction. No account managers in between, and fewer, better pieces of content instead of volume.</p></details>
+        <details class="card reveal"><summary data-t="t128">Do we need our own production team?</summary><p data-t="t129">No. Done for you covers everything. Have your own team or creators? Then Creative strategy or Advisory might fit better.</p></details>
+        <details class="card reveal"><summary data-t="t130">What does it cost?</summary><p data-t="t131">It depends on how much content you need and whether a production is included. After the intro call and creative audit you get a proposal with a fixed price.</p></details>
+        <details class="card reveal"><summary data-t="t132">Where are you based?</summary><p data-t="t133">Teun works fully remote, in English and Dutch, with brands across Europe. Productions are run by a trusted crew where your brand needs them.</p></details>
       </div>
     </section>
 
-    <!-- 5 · Loop -->
-    <section class="sec" id="loop">
-      <div class="wrap">
-        <h2 class="reveal">Van onboarding tot iteratie: <em>één loop.</em></h2>
-        <ol class="grid g5 steps">
-          <li class="card reveal"><span class="num">01</span><h3>Intro &amp; audit</h3><p>Kennismakingscall met creative audit van je ad library, site en huidige creatives.</p></li>
-          <li class="card reveal"><span class="num">02</span><h3>Maandplan &amp; contract</h3><p>Concreet plan, heldere afspraken, tekenen.</p></li>
-          <li class="card reveal"><span class="num">03</span><h3>Onboarding</h3><p>Merk, doelgroep, doelen en tone of voice scherp via de Creative Onboarding.</p></li>
-          <li class="card reveal"><span class="num">04</span><h3>Research</h3><p>Een creative testing framework op basis van je onboarding-antwoorden &amp; onze research.</p></li>
-          <li class="card reveal"><span class="num">05</span><h3>Creative strategy &amp; DTC consult</h3><p>Angles en formats gekoppeld aan je funnels.</p></li>
-          <li class="card reveal"><span class="num">06</span><h3>Scriptwriting</h3><p>Scripts met ingebouwde feedbackrondes.</p></li>
-          <li class="card reveal"><span class="num">07</span><h3>Shootplanning</h3><p>Talent, locatie en regie geregeld.</p></li>
-          <li class="card reveal"><span class="num">08</span><h3>Editing</h3><p>Elk video concept met 3 variaties. Altijd.</p></li>
-          <li class="card reveal"><span class="num">09</span><h3>Feedback &amp; oplevering</h3><p>Maximaal twee feedbackrondes, dan publicatieklaar in jouw specs.</p></li>
-          <li class="card hi reveal"><span class="num">10</span><h3>Iteratie</h3><p>Learnings terug de creative strategy-loop in.</p></li>
-        </ol>
-        <p class="closer reveal"><b>Stap 10 voedt stap 6:</b> <em>elke ronde creatives wordt slimmer dan de vorige.</em></p>
-      </div>
-    </section>
-
-    <!-- 6 · Work -->
-    <section class="sec" id="werk">
-      <div class="wrap">
-        <h2 class="reveal">Work I've <em>made.</em></h2>
-        <p class="lead reveal">Een greep uit de video's: van high-production tot creatieve social-first sketches met rappers en collabs met bekende dierenartsen.</p>
-        <div class="phones">
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-launch.jpg" alt="Launch-video met het Poopy-team" loading="lazy"></div><figcaption>Van idee tot oplevering</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-interview.jpg" alt="Straatinterview in Tilburg" loading="lazy"></div><figcaption>Van idee tot oplevering</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-vet.jpg" alt="Collab met dierenarts Piet Hellemans" loading="lazy"></div><figcaption>Van idee tot oplevering</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-sketch.jpg" alt="Social-first sketch" loading="lazy"></div><figcaption>Van idee tot oplevering</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-demo.jpg" alt="Productdemo" loading="lazy"></div><figcaption>Van idee tot oplevering</figcaption></figure>
-          <figure class="ph reveal"><span class="ph-word">plnktn</span><div class="ph-frame"><img src="assets/work/plnktn-meeting.jpg" alt="Sketch op kantoor voor plnktn" loading="lazy"></div><figcaption>Creative Strategy &amp; Script<br>(freelance via agency)</figcaption></figure>
-          <figure class="ph reveal"><span class="ph-word">plnktn</span><div class="ph-frame"><img src="assets/work/plnktn-testimonial.jpg" alt="Testimonial voor plnktn" loading="lazy"></div><figcaption>Creative Strategy &amp; Script<br>(freelance via agency)</figcaption></figure>
-          <figure class="ph reveal"><span class="ph-word">plnktn</span><div class="ph-frame"><img src="assets/work/plnktn-shelf.jpg" alt="Productschap van plnktn" loading="lazy"></div><figcaption>Creative Strategy &amp; Script<br>(freelance via agency)</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7 · Iteration -->
-    <section class="sec" id="iteratie">
-      <div class="wrap">
-        <h2 class="reveal">Iteratie <em>van winning ads.</em></h2>
-        <p class="lead reveal">Het begint met het testen van de format en de messaging, bij goed resultaat wordt er gevarieerd in hook, VO, messaging, en visuals.</p>
-        <div class="phones">
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-demo.jpg" alt="Eerste creative" loading="lazy"></div><figcaption>Eerste Creative (based on competitor winner)</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-vo-iteration.jpg" alt="VO-iteratie" loading="lazy"></div><figcaption>VO iteration</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-hook-vo.jpg" alt="Hook- en VO-iteratie" loading="lazy"></div><figcaption>Hook + VO iteration</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-visual-message.jpg" alt="Visual- en message-iteratie" loading="lazy"></div><figcaption>Visual &amp; Message iteration</figcaption></figure>
-        </div>
-        <p class="lead sub reveal">Winning format, dus variatie op visual, messaging &amp; language. Angles gebaseerd op problem aware google search volume.</p>
-        <div class="phones">
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-lang-1.jpg" alt="Variatie 1" loading="lazy"></div><figcaption>Visual, Message &amp; Language iteration</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-lang-2.jpg" alt="Variatie 2" loading="lazy"></div><figcaption>Visual, Message &amp; Language iteration</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-lang-3.jpg" alt="Variatie 3" loading="lazy"></div><figcaption>Visual, Message &amp; Language iteration</figcaption></figure>
-          <figure class="ph reveal"><img class="ph-logo" src="assets/poopy-logo.png" alt="Poopy"><div class="ph-frame"><img src="assets/work/poopy-lang-4.jpg" alt="Variatie 4" loading="lazy"></div><figcaption>Visual, Message &amp; Language iteration</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8 · Hook variations -->
-    <section class="sec" id="hooks">
-      <div class="wrap">
-        <h2 class="reveal">Work I've <em>made.</em></h2>
-        <p class="lead reveal">Hook variations</p>
-        <div class="phones">
-          <figure class="ph reveal"><div class="ph-frame"><img src="assets/work/hook-1.jpg" alt="Hook 1: talking head aan de keukentafel" loading="lazy"></div><figcaption>Hook 1</figcaption></figure>
-          <figure class="ph reveal"><div class="ph-frame"><img src="assets/work/hook-2.jpg" alt="Hook 2: Okinawa, Japan" loading="lazy"></div><figcaption>Hook 2</figcaption></figure>
-          <figure class="ph reveal"><div class="ph-frame"><img src="assets/work/hook-3.jpg" alt="Hook 3: een van de blue zones" loading="lazy"></div><figcaption>Hook 3</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9 · Results -->
-    <section class="sec" id="resultaten">
-      <div class="wrap">
-        <h2 class="reveal">Client <em>results.</em></h2>
-        <p class="lead reveal">Geen mooie praatjes, dit is hoe het eruitziet in de ads manager.</p>
-        <button type="button" class="shot reveal" data-zoom aria-label="Screenshot op volle grootte bekijken">
-          <img src="assets/results/ads-manager.jpg" alt="Meta Ads Manager: €633.072 besteed, gemiddelde ROAS 4,08, €2.584.015 conversiewaarde, 65 miljoen weergaven" width="1330" height="774" loading="lazy">
-        </button>
-        <p class="closer reveal"><em>Cijfers uit echte campagnes. Wegens privacy geanonimiseerd.</em></p>
-      </div>
-    </section>
-
-    <dialog class="lightbox" aria-label="Screenshot op volle grootte">
-      <form method="dialog"><button class="lb-close" aria-label="Sluiten">✕</button></form>
-      <img alt="">
-    </dialog>
-
-    <!-- 10 · Two ways -->
-    <section class="sec" id="samenwerken">
-      <div class="wrap">
-        <h2 class="reveal">2 manieren om <em>samen te werken.</em></h2>
-        <div class="grid g2 narrow">
-          <article class="card route reveal"><span class="num blue">01</span><h3>Vaste pakketten</h3><p>Volledige producties met vaste scope en vaste prijs. Ideaal als je precies weet wat je nodig hebt.</p></article>
-          <article class="card hi route reveal"><span class="num">02</span><h3>Creative Strategy Only</h3><p>Alleen de strategie en scripts — van Teun zelf, zonder productieteam. Voor merken met eigen productie.</p><p class="tag"><em>One-off of retainer</em></p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 13 · Who does what -->
-    <section class="sec" id="team">
-      <div class="wrap">
-        <h2 class="reveal">Wie doet <em class="b">wat.</em></h2>
-        <p class="lead reveal">Teun blijft persoonlijk verantwoordelijk voor strategie en klantcontact. Uitvoering ligt bij een vast team, aangestuurd door Teun zelf.</p>
-        <div class="grid g2">
-          <article class="card reveal"><h3>Teun</h3><ul class="plus"><li>Client calls en intake</li><li>Creative strategy en concepting</li><li>Onboarding-review</li><li>Scriptwriting</li><li>Aansturing productieteam + interne feedback</li></ul></article>
-          <article class="card reveal"><h3>Productieteam</h3><ul class="plus"><li>Pre-shoot call en voorbereiding</li><li>Locatiescouting</li><li>Shootdag (producer/regisseur, videograaf)</li><li>Editing en verwerken van klantfeedback</li></ul></article>
-        </div>
-        <p class="closer reveal"><em>Ofwel: Teun is je vaste contactpersoon en creatieve motor, die zorgt dat een team van creatievelingen de visie tot leven brengt zonder hoofdpijn voor jou.</em></p>
-      </div>
-    </section>
-
-    <!-- 14 · Contact -->
+    <!-- Contact -->
     <section class="sec cta" id="contact">
       <div class="wrap center">
-        <span class="ball lg reveal" aria-hidden="true"></span>
-        <h2 class="reveal">Klaar om je <em>creatieve</em> motor<br><em>aan</em> te zetten?</h2>
-        <p class="hero-small reveal">We starten met een onboarding-call en een creative audit van je huidige beeldbank en advertising creatives.</p>
-        <!-- TODO: Teun's boekingslink (bijv. Calendly) hier invullen -->
-        <a href="#" class="btn reveal">Plan een kennismaking</a>
+        <img class="me reveal" src="assets/teun.jpg" alt="Teun Wientjens" width="120" height="114">
+        <h2 class="reveal" data-t="t134">Ready to turn on your<br><em>creative</em> engine?</h2>
+        <p class="hero-small reveal" data-t="t135">Book a 30-minute intro call with Teun. We look at your current ads and where better creative can move your numbers.</p>
+        <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ofHE8I3sKXD-uI1uMaeH-Koqclt5haYWABXHGtLXQmIU-AO3LOSjHk7LJwhe9zlsYVPKGJxn9" target="_blank" rel="noopener" class="btn reveal" data-t="t136">Book a call with Teun</a>
         <hr class="rule reveal">
-        <p class="sign reveal">Teun Wientjens &nbsp;·&nbsp; The Creative Pod</p>
+        <p class="sign reveal" data-t="t137">Teun Wientjens &nbsp;·&nbsp; The Creative Pod</p>
       </div>
     </section>
   </main>
 
-  <script src="main.js?v=3"></script>
+  <footer class="foot">
+    <div class="wrap">
+      <p data-t="f1">© 2026 The Creative Pod · Creative strategy &amp; production for DTC brands</p>
+      <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ofHE8I3sKXD-uI1uMaeH-Koqclt5haYWABXHGtLXQmIU-AO3LOSjHk7LJwhe9zlsYVPKGJxn9" target="_blank" rel="noopener" data-t="f2">Book a call</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js?v=21"></script>
+  <script src="main.js?v=21"></script>
 </body>
 </html>
