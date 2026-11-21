@@ -1,11 +1,11 @@
 // Nederlandse teksten. Engels staat in index.html en is de standaard.
 // Ontbreekt een sleutel hier, dan blijft de Engelse tekst staan.
 window.NL = {
-  pv1: "Productad (EN)",
-  pv2: "Voice-over-ad",
-  pv3: "Hooktest (NL)",
-  pv4: "Productlancering",
-  pv5: "Mini-VSL",
+  pv1: "Productvideo",
+  pv2: "Straatinterview",
+  pv3: "Collab met dierenarts",
+  pv4: "Hazmat-stunt",
+  pv5: "Sketch met Lange Frans",
   v1t: "Eén eigenaar",
   v1p: "Van idee tot eindversie. Niets raakt kwijt in overdrachten.",
   v2t: "High production",
