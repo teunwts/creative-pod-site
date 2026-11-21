@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /concept/
+Sitemap: https://creative-pod.com/sitemap.xml
